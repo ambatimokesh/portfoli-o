@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ambati Mokesh Reddy — Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio of Ambati Mokesh Reddy — Web Developer, AI enthusiast. Projects: Travel Eazy (AI Tourism), Image Feature Extraction (SURF, HOG, LBP).">
+  <meta name="author" content="Ambati Mokesh Reddy">
+  <meta property="og:title" content="Ambati Mokesh Reddy — Portfolio">
+  <meta property="og:description" content="Web Dev + AI projects, experience, skills, certifications.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ambati Mokesh Reddy",
+    "jobTitle": "Web Developer",
+    "email": "mailto:ambatimokeshreddy@gmail.com",
+    "telephone": "+917032183762",
+    "address": { "@type": "PostalAddress", "addressRegion": "Andhra Pradesh", "addressCountry": "IN" },
+    "url": "www.linkedin.com/in/mokeshambati",
+    "sameAs": [
+      "https://github.com/ambatimokesh",
+      "mailto:ambatimokeshreddy@gmail.com"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Go to home">AMR</a>
+    <nav class="nav" aria-label="Primary">
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+      <ul id="navMenu" class="nav__menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#contact" class="btn btn--primary">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="icon-link" href="https://github.com/ambatimokesh" target="_blank" rel="onopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.9 0-1.3.47-2.37 1.24-3.2-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.22a11.5 11.5 0 0 1 6 0c2.29-1.54 3.3-1.22 3.3-1.22.66 1.64.24 2.86.12 3.16.77.83 1.24 1.9 1.24 3.2 0 4.58-2.8 5.6-5.48 5.9.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.58A12 12 0 0 0 12 .5z"/></svg>
+      </a>
+      <a class="icon-link" href="https://www.linkedin.com/in/mokeshambati" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8 8h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.38 0-2.75 1.86-2.75 3.78V24H8V8z"/></svg>
+      </a>
+      <button id="themeToggle" class="icon-button" aria-label="Toggle theme">🌓</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__content container">
+        <p class="eyebrow"></p>
+        <h1>Hi, I'm <span class="accent">Mokesh Reddy Ambati</span></h1>
+        <p class="subtitle">
+          I love building real-world apps and applying AI to make experiences smarter and more inclusive.
+        </p>
+        <div class="cta-row">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a class="btn btn--ghost" href="mokeshresume.pdf" download>Download Resume</a>
+        </div>
+        <ul class="meta">
+          <li>📍 Andhra Pradesh, India</li>
+          <li>📧 <a href="mailto:ambatimokeshreddy@gmail.com">ambatimokeshreddy@gmail.com</a></li>
+          <li>📱 <a href="tel:+917032183762">+91 7032183762</a></li>
+        </ul>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <h2 class="section__title">About</h2>
+      <p>
+        Passionate and driven Computer Science graduate (Mohan Babu University) with hands-on
+        experience in web development and smart tourism solutions. Fast learner who thrives on
+        solving problems through creativity, teamwork, and purpose-driven technology.
+      </p>
+      <ul class="chips">
+        <li>Strategic Communication</li>
+        <li>Organizing</li>
+        <li>Leadership</li>
+        <li>Team Work</li>
+        <li>Adaptive Learning</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="grid skills">
+          <div class="card">
+            <h3>Front-end</h3>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Programming</h3>
+            <ul class="tags">
+              <li>C (basics)</li><li>Python</li>
+            </ul>
+          </div>
+          
+          <div class="card">
+            <h3>Tools & OS</h3>
+            <ul class="tags">
+              <li>Windows</li><li>Git & GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <h2 class="section__title">Projects</h2>
+
+      <article class="project">
+        <div class="project__content">
+          <h3>Travel Eazy — AI-Powered Tourism in India</h3>
+          <p>
+            Python-based web app providing personalized travel recommendations based on user health, preferences, and accessibility needs.
+            Separate Admin/User modules keep tourist info fresh and booking smooth.
+          </p>
+          <ul class="bullets">
+            <li>Models: Random Forest, KNN, Gradient Boosting</li>
+            <li>Stack: Python, Flask, HTML, CSS, Bootstrap</li>
+            <li>Focus: Inclusive tourism, real-time recommendations, UI/UX</li>
+          </ul>
+          <div class="project__links">
+            <button class="btn btn--ghost" data-modal-target="#projectTravel">Read More</button>
+            <a class="btn btn--primary" href="https://github.com/ambatimokesh" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="project__media">
+          <div class="placeholder">Project Image</div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__content">
+          <h3>Image Feature Extraction — SURF, HOG, LBP</h3>
+          <p>
+            Pipeline for preprocessing and extracting robust features to improve object detection, facial recognition, and texture classification.
+          </p>
+          <ul class="bullets">
+            <li>Preprocessing: grayscale, normalization, denoising</li>
+            <li>Libraries: OpenCV, NumPy, Matplotlib</li>
+            <li>Skills: feature engineering & visualization</li>
+          </ul>
+          <div class="project__links">
+            <button class="btn btn--ghost" data-modal-target="#projectCV">Read More</button>
+          </div>
+        </div>
+        <div class="project__media">
+          <div class="placeholder">Project Image</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <h3>Web Development Intern <span class="muted">— Oct 2024 – Nov 2024</span></h3>
+              <p>Built UI and interactive components using HTML, CSS, and JavaScript. Delivered features on time.</p>
+              <ul class="bullets">
+                <li>Developed responsive UI and micro-interactions</li>
+                <li>Improved CSS structure and accessibility</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <h3>Prompt Design in Vertex AI <span class="muted">— Jun 2024</span></h3>
+              <p>Completed skill badge covering prompt engineering, image analysis, multimodal techniques, and Gemini models.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section container">
+      <h2 class="section__title">Education</h2>
+      <div class="edu">
+        <div class="card">
+          <h3>BCA — 85.7% <span class="muted">2022–2025</span></h3>
+          <p>Mohan Babu University, Tirupati</p>
+        </div>
+        <div class="card">
+          <h3>Intermediate (BiPC) — 79.5% <span class="muted">2018–2020</span></h3>
+          <p>Sri Chaitanya Junior College, Kurnool</p>
+        </div>
+        <div class="card">
+          <h3>SSC — GPA 8.8 <span class="muted">2017–2018</span></h3>
+          <p>Sri Chaitanya E.M. School, Nandyala</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certs" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Certifications</h2>
+        <ul class="certs">
+          <li>Introduction to Generative AI — Google Cloud Skill Boost</li>
+          <li>Prompt Design in Vertex AI — Google Cloud Skill Boost</li>
+          <li>Web Development — Bharath Intern (Virtual Internship)</li>
+          <li>Data Analytics & Visualization Job Simulation — Accenture</li>
+          <li>Introduction to Software Programming & Databases — IBM</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <h2 class="section__title">Contact</h2>
+      <p>Open to Web Development and AI-driven application roles. Let’s talk!</p>
+      <form class="contact" action="mailto:ambatimokeshreddy@gmail.com" method="post" enctype="text/plain">
+        <div class="grid">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" placeholder="How can I help?" required></textarea>
+        </label>
+        <div class="cta-row">
+          <button class="btn btn--primary" type="submit">Send</button>
+          <a class="btn btn--ghost" href="mokeshresume.pdf" download>Download Resume</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Ambati Mokesh Reddy</p>
+    <div class="footer-links">
+      <a href="mailto:ambatimokeshreddy@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/mokeshambati" target="_blank" rel="onopener">LinkedIn</a>
+      <a href="https://github.com/ambatimokesh" target="_blank" rel="onopener">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <dialog id="projectTravel" class="modal">
+    <form method="dialog" class="modal__card">
+      <h3>Travel Eazy — Details</h3>
+      <p>
+        Designed a recommendation engine that adapts to user health conditions (mobility, allergies, diet),
+        preferences, and interests. Admin panel maintains attractions. Emphasis on inclusive travel.
+      </p>
+      <ul class="bullets">
+        <li>Built Flask routes, templates, and user flows</li>
+        <li>Integrated model inference for tailored itineraries</li>
+        <li>Improved UX with accessibility-first design</li>
+      </ul>
+      <menu><button class="btn" value="cancel">Close</button></menu>
+    </form>
+  </dialog>
+
+  <dialog id="projectCV" class="modal">
+    <form method="dialog" class="modal__card">
+      <h3>Image Feature Extraction — Details</h3>
+      <p>
+        Implemented SURF for scale/rotation-robust keypoints, HOG for shape gradients, and LBP for texture patterns.
+        Preprocessing included grayscale conversion, normalization, and noise reduction.
+      </p>
+      <menu><button class="btn" value="cancel">Close</button></menu>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
